@@ -1,0 +1,3 @@
+# The frozen runs are hashed byte-for-byte in generated/data/PROVENANCE.json. Git must not
+# normalise their line endings, or a fresh clone would no longer match the recorded hashes.
+audit_runs/results/** -text

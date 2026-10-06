@@ -1,0 +1,105 @@
+{
+  "experiment": "secant_recheck",
+  "config_path": "<code>/edm_assumption_audit/configs/secant_recheck.yaml",
+  "seconds": 2222.9711043834686,
+  "config": {
+    "experiment": "secant_recheck",
+    "paths": {
+      "edm_root": "<code>",
+      "network": "https://nvlabs-fi-cdn.nvidia.com/edm/pretrained/edm-cifar10-32x32-cond-vp.pkl",
+      "outdir": "<code>/audit_runs/results/secant_recheck_2026-09-23"
+    },
+    "net_key": "ema",
+    "runtime": {
+      "device": "cuda",
+      "seed": 1234,
+      "batch_size": 16
+    },
+    "grid": {
+      "sigma_max": 80.0,
+      "sigma_min": 0.002,
+      "rho_edm": 7.0
+    },
+    "num_trajectories": 128,
+    "classes": null,
+    "K": 272,
+    "levels": [
+      0.004,
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      8.0
+    ],
+    "num_trajectories_per_class": 8,
+    "t_nodes": 65,
+    "synthetic": {}
+  },
+  "results": {
+    "device": "cuda",
+    "classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "K": 272,
+    "t_nodes": 65,
+    "nested_counts": [
+      9,
+      17,
+      33,
+      65
+    ],
+    "levels": [
+      {
+        "target": 0.004,
+        "step_index": 264,
+        "sigma_actual": 0.004003689158707857
+      },
+      {
+        "target": 0.01,
+        "step_index": 252,
+        "sigma_actual": 0.010116739198565483
+      },
+      {
+        "target": 0.03,
+        "step_index": 236,
+        "sigma_actual": 0.029532548040151596
+      },
+      {
+        "target": 0.1,
+        "step_index": 215,
+        "sigma_actual": 0.09762091189622879
+      },
+      {
+        "target": 0.3,
+        "step_index": 192,
+        "sigma_actual": 0.29644227027893066
+      },
+      {
+        "target": 1.0,
+        "step_index": 162,
+        "sigma_actual": 1.0099793672561646
+      },
+      {
+        "target": 3.0,
+        "step_index": 131,
+        "sigma_actual": 2.959348201751709
+      },
+      {
+        "target": 8.0,
+        "step_index": 98,
+        "sigma_actual": 7.946503162384033
+      }
+    ]
+  }
+}

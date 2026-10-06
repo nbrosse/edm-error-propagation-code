@@ -1,0 +1,55 @@
+{
+  "experiment": "oracle_refinement",
+  "initialization": "exact",
+  "M": 65536,
+  "K": [
+    17,
+    34,
+    68,
+    136,
+    272,
+    544,
+    1088
+  ],
+  "sigma_hi": 1.841891846566616,
+  "grid": {
+    "sigma_max": 80.0,
+    "sigma_min": 0.002,
+    "rho_edm": 7.0,
+    "K": [
+      17,
+      34,
+      68,
+      136,
+      272,
+      544,
+      1088
+    ]
+  },
+  "law": {
+    "weights": [
+      0.15,
+      0.35,
+      0.35,
+      0.15
+    ],
+    "centers": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+    ],
+    "width": 0.04
+  },
+  "sigma_data": 0.5,
+  "python": "3.9.21",
+  "numpy": "1.24.4",
+  "scipy": "1.13.1",
+  "inputs_sha256": {
+    "audit_runs/results/toy_law_2026-09-22/summary.json": "eeb3fc41c25ced4f45945fb33e1cd815e50590c899b1ffd7f6ff8e8b7fd04aeb",
+    "edm_assumption_audit/experiments/toy_refinement.py": "d45f9e6b7b395dfda475af589e2d64c64be829d069d32154de2ee8a3556dfba1",
+    "edm_assumption_audit/toy/law.py": "d9fa836507082f5bc2116d0791a215c2bdb970a92422d4f56b656531dba498f9",
+    "edm_assumption_audit/toy/mixture.py": "ca82e4c304443b0b581eefe7aa8649723ff9d5aebb0eb6c7cf35ccb3767e91ba",
+    "edm_assumption_audit/edm/grid.py": "1c85fea438f0309ab39cfa0374c6b5597ec06df609dd877bc54d92e4bf31c71f"
+  }
+}

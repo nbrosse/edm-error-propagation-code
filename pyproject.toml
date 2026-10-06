@@ -1,0 +1,79 @@
+[build-system]
+requires = ["uv_build>=0.11.21,<0.12"]
+build-backend = "uv_build"
+
+[project]
+name = "edm-audit"
+version = "0.1.0"
+description = "Numerical experiments of the EDM error-propagation paper, on top of the EDM code"
+requires-python = ">=3.9,<3.10"
+dependencies = [
+    "numpy>=1.20,<2.0",
+    "scipy>=1.7.1",
+    "click>=8.0",
+    "tqdm",
+    "requests",
+    "pillow>=8.3.1",
+    "matplotlib",
+    "psutil",
+    "imageio",
+    "imageio-ffmpeg>=0.4.3",
+    "pyspng",
+]
+
+[project.scripts]
+edm-audit-figures = "edm_audit.figures:main"
+edm-audit-figure-data = "edm_audit.figure_data:main"
+
+[project.optional-dependencies]
+cpu = [
+    "torch==1.12.1+cpu",
+]
+
+cu113 = [
+    "torch==1.12.1+cu113 ; sys_platform == 'linux' or sys_platform == 'win32'",
+]
+
+cu116 = [
+    "torch==1.12.1+cu116 ; sys_platform == 'linux' or sys_platform == 'win32'",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7,<9",
+]
+
+[tool.uv]
+conflicts = [
+    [
+        { extra = "cpu" },
+        { extra = "cu113" },
+        { extra = "cu116" },
+    ],
+]
+
+[tool.uv.build-backend]
+module-root = ""
+module-name = ["edm_audit", "dnnlib", "training", "torch_utils"]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu", extra = "cpu" },
+    { index = "pytorch-cu113", extra = "cu113", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+    { index = "pytorch-cu116", extra = "cu116", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu113"
+url = "https://download.pytorch.org/whl/cu113"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu116"
+url = "https://download.pytorch.org/whl/cu116"
+explicit = true

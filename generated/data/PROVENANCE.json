@@ -1,0 +1,25 @@
+{
+  "high_noise": {
+    "stability_full/large_noise_margin.csv": "6948fcc09b21d26256a06983c574be68c763c73a79fe88b1d6465aa3b5ec2fad",
+    "stability_full/regression_residual.csv": "76ed834aff233ddb51c63d7da9ca60ed7b01bc0e29bf2e7edebff407ebe65663"
+  },
+  "oracle_refinement": {
+    "oracle_refinement_2026-09-24/check/metadata.json": "76917b6354a0d6231b2c24edaeb23e4ff3282ad7f4e03658109cc2e2a818c9d2",
+    "oracle_refinement_2026-09-24/check/orders.csv": "208c720383d95d2124608c9f972a9f0db490707f092d04a7d178a1ea3ca807f2",
+    "oracle_refinement_2026-09-24/check/steps.csv": "df7b134c7f1ea05e6842fe53fd84b631b2e35f669994040fc84cdbc677bb250c",
+    "oracle_refinement_2026-09-24/check/summary.csv": "b784e89539938491683836dc9790ea8639fc1f4e51cb7638ad7e42deeffde201",
+    "oracle_refinement_2026-09-24/main/metadata.json": "f25497cbc682dcce4a9d2db10276f9ea84c9f1f3ec2eda5a7732a6b6ec895744",
+    "oracle_refinement_2026-09-24/main/orders.csv": "8cf55758097424d7d0a83a05c55e1db21423738d9a1d5d00f025f82cc1e33419",
+    "oracle_refinement_2026-09-24/main/steps.csv": "6dd6db712b80d9e3975a5a81fdcd08cec41a11a9a39bfb5822f2c2c92ec34bf5",
+    "oracle_refinement_2026-09-24/main/summary.csv": "2bc9e2bea7b871208ad41af687c6ff6ba1800409dfcb81a2a465d59123945360"
+  },
+  "toy_law": {
+    "toy_law_2026-09-22/end_to_end.csv": "12019f5152bc28d3656e9902d92d888d165d402d1ead66a70b03c453d271fe8f",
+    "toy_law_2026-09-22/summary.csv": "161d56c229989a8ee99ff5e2c9220c46fbde0a4d8eb60b50dd936401751125c0"
+  },
+  "transport": {
+    "transport_2026-09-22/budget.csv": "c8ff9bd16304c2e82a2d53d3ffeecf154d56f68c72b7a52928de19da0b1d8b12",
+    "transport_2026-09-22/influence.csv": "6b55faec9c09f5be4f0e4167124fbff1cd0a224b9938acb8013b9917fc3d84fc",
+    "transport_2026-09-22/segment_max.csv": "dff4a603c759a1368ddebeea2af71192e56f2aff32ace64fb7a939ba0e51ca5d"
+  }
+}

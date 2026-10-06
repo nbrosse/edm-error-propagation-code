@@ -1,0 +1,123 @@
+{
+  "experiment": "toy_controls",
+  "config_path": "<code>/edm_assumption_audit/configs/toy_controls_full.yaml",
+  "seconds": 647.8011832237244,
+  "config": {
+    "experiment": "toy_controls",
+    "paths": {
+      "outdir": "<code>/audit_runs/results/toy_controls_2026-09-22"
+    },
+    "sigma_data": 0.5,
+    "law": {
+      "weights": [
+        0.15,
+        0.35,
+        0.35,
+        0.15
+      ],
+      "centers": [
+        -3.0,
+        -1.0,
+        1.0,
+        3.0
+      ],
+      "width": 0.04
+    },
+    "misspec": {
+      "weights": [
+        0.2,
+        0.3,
+        0.3,
+        0.2
+      ],
+      "center_scale": 1.02,
+      "width_scale": 0.7
+    },
+    "grid": {
+      "sigma_max": 80.0,
+      "sigma_min": 0.002
+    },
+    "quadrature": {
+      "M": 4096,
+      "check_factor": 2
+    },
+    "clock": {
+      "rho_edm": [
+        2.0,
+        3.0,
+        7.0
+      ],
+      "K": [
+        68,
+        136,
+        272,
+        544
+      ]
+    },
+    "starting_noise": {
+      "rho_edm": 7.0,
+      "reference_sigma_max": 80.0,
+      "reference_K": 272,
+      "targets": [
+        20.0,
+        80.0,
+        320.0
+      ],
+      "sigma_hi": 4.0,
+      "b_hi": 0.9
+    },
+    "synchronous": {
+      "rho_edm": 7.0,
+      "K": [
+        68,
+        136,
+        272
+      ],
+      "sigma_window": 2.0
+    }
+  },
+  "results": {
+    "B_d1": 32.47457875465919,
+    "law": {
+      "weights": [
+        0.15,
+        0.35,
+        0.35,
+        0.15
+      ],
+      "means": [
+        -0.8108818728795866,
+        -0.27029395762652886,
+        0.27029395762652886,
+        0.8108818728795866
+      ],
+      "width": 0.04
+    },
+    "quadrature_check": {
+      "clock_rho2": {
+        "K": 544,
+        "M": 4096,
+        "M_check": 8192,
+        "final_error_M": 0.02290457204002658,
+        "final_error_M_check": 0.023333221219507382,
+        "final_error_rel_diff": 0.018370767389906537
+      },
+      "clock_rho3": {
+        "K": 544,
+        "M": 4096,
+        "M_check": 8192,
+        "final_error_M": 0.017256255828905356,
+        "final_error_M_check": 0.017821081020502626,
+        "final_error_rel_diff": 0.03169421602132082
+      },
+      "clock_rho7": {
+        "K": 544,
+        "M": 4096,
+        "M_check": 8192,
+        "final_error_M": 0.013871643272594542,
+        "final_error_M_check": 0.015190108458525699,
+        "final_error_rel_diff": 0.08679761500920337
+      }
+    }
+  }
+}

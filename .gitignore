@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Editors and agent tooling
+.idea/
+.vscode/
+.claude/
+
+# Generated figures (rebuilt with edm-audit-figures); generated/data/ is versioned.
+generated/figures/
+
+# Runs: only the frozen runs under results/ are versioned. Of their large sidecars only the
+# per-trajectory moments of the transport run are kept, since figures.py rebuilds the
+# median-rate budget from them.
+audit_runs/*
+!audit_runs/results/
+audit_runs/results/**/per_trajectory/
+audit_runs/results/**/*.npz
+!audit_runs/results/transport_2026-09-22/moments/*.npz
+audit_runs/results/**/*.log
+
+# Datasets and downloads (rebuilt with dataset_tool.py)
+datasets/
+downloads/
+fid-refs/

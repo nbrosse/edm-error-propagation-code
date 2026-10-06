@@ -1,0 +1,233 @@
+{
+  "experiment": "transport",
+  "config_path": "<code>/edm_assumption_audit/configs/transport_full.yaml",
+  "seconds": 21184.98844075203,
+  "config": {
+    "experiment": "transport",
+    "paths": {
+      "edm_root": "<code>",
+      "network": "https://nvlabs-fi-cdn.nvidia.com/edm/pretrained/edm-cifar10-32x32-cond-vp.pkl",
+      "outdir": "<code>/audit_runs/results/transport_2026-09-22"
+    },
+    "net_key": "ema",
+    "runtime": {
+      "device": "cuda",
+      "seed": 1234,
+      "batch_size": 16
+    },
+    "grid": {
+      "sigma_max": 80.0,
+      "sigma_min": 0.002,
+      "rho_edm": 7.0,
+      "K": [
+        17,
+        34,
+        68,
+        136,
+        272
+      ]
+    },
+    "fine_multiplier": 2,
+    "coarse_solver": "euler",
+    "fine_solver": "euler",
+    "num_trajectories": 128,
+    "classes": null,
+    "window": {
+      "sigma_max": 2.0
+    },
+    "segment": {
+      "K": [
+        68,
+        272
+      ],
+      "levels": [
+        0.004,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        8.0
+      ],
+      "num_trajectories_per_class": 8,
+      "t_nodes": 9,
+      "lanczos_iters": 32,
+      "bootstrap_replicates": 1000,
+      "random_seed": 20260922,
+      "save_samples": true
+    },
+    "synthetic": {}
+  },
+  "results": {
+    "device": "cuda",
+    "dtype": "float32 inference, float64 reductions",
+    "synthetic_network": false,
+    "classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "class_weights": "uniform",
+    "window": {
+      "sigma_max": 2.0
+    },
+    "segment": {
+      "K": [
+        68,
+        272
+      ],
+      "levels": [
+        0.004,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        8.0
+      ],
+      "num_trajectories_per_class": 8,
+      "t_nodes": 9,
+      "lanczos_iters": 32,
+      "bootstrap_replicates": 1000,
+      "random_seed": 20260922,
+      "save_samples": true
+    },
+    "segment_levels": {
+      "68": [
+        {
+          "K": 68,
+          "target": 0.004,
+          "step_index": 66,
+          "sigma_actual": 0.004003689158707857
+        },
+        {
+          "K": 68,
+          "target": 0.01,
+          "step_index": 63,
+          "sigma_actual": 0.010116739198565483
+        },
+        {
+          "K": 68,
+          "target": 0.03,
+          "step_index": 59,
+          "sigma_actual": 0.029532548040151596
+        },
+        {
+          "K": 68,
+          "target": 0.1,
+          "step_index": 54,
+          "sigma_actual": 0.09262494742870331
+        },
+        {
+          "K": 68,
+          "target": 0.3,
+          "step_index": 48,
+          "sigma_actual": 0.29644227027893066
+        },
+        {
+          "K": 68,
+          "target": 1.0,
+          "step_index": 41,
+          "sigma_actual": 0.936654269695282
+        },
+        {
+          "K": 68,
+          "target": 3.0,
+          "step_index": 33,
+          "sigma_actual": 2.8655147552490234
+        },
+        {
+          "K": 68,
+          "target": 8.0,
+          "step_index": 24,
+          "sigma_actual": 8.400935173034668
+        }
+      ],
+      "272": [
+        {
+          "K": 272,
+          "target": 0.004,
+          "step_index": 264,
+          "sigma_actual": 0.004003689158707857
+        },
+        {
+          "K": 272,
+          "target": 0.01,
+          "step_index": 252,
+          "sigma_actual": 0.010116739198565483
+        },
+        {
+          "K": 272,
+          "target": 0.03,
+          "step_index": 236,
+          "sigma_actual": 0.029532548040151596
+        },
+        {
+          "K": 272,
+          "target": 0.1,
+          "step_index": 215,
+          "sigma_actual": 0.09762091189622879
+        },
+        {
+          "K": 272,
+          "target": 0.3,
+          "step_index": 192,
+          "sigma_actual": 0.29644227027893066
+        },
+        {
+          "K": 272,
+          "target": 1.0,
+          "step_index": 162,
+          "sigma_actual": 1.0099793672561646
+        },
+        {
+          "K": 272,
+          "target": 3.0,
+          "step_index": 131,
+          "sigma_actual": 2.959348201751709
+        },
+        {
+          "K": 272,
+          "target": 8.0,
+          "step_index": 98,
+          "sigma_actual": 7.946503162384033
+        }
+      ]
+    },
+    "sampler_runs_per_class": [
+      {
+        "num_levels": 18,
+        "solver": "euler"
+      },
+      {
+        "num_levels": 35,
+        "solver": "euler"
+      },
+      {
+        "num_levels": 69,
+        "solver": "euler"
+      },
+      {
+        "num_levels": 137,
+        "solver": "euler"
+      },
+      {
+        "num_levels": 273,
+        "solver": "euler"
+      },
+      {
+        "num_levels": 545,
+        "solver": "euler"
+      }
+    ]
+  }
+}
