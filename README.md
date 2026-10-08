@@ -3,7 +3,7 @@
 Code and frozen results for the numerical experiments of
 
 > Nicolas Brosse, Arnak S. Dalalyan. *Universal Local Error and Realized Amplification for the
-> First-Order EDM Predictor.*
+> First-Order EDM Predictor.* [arXiv:2610.10190](https://arxiv.org/abs/2610.10190), 2026.
 
 The experiments live in [`edm_audit/`](edm_audit/README.md), which documents each script, the run
 behind every figure and table of the paper, and the meaning of every output column. They are built
@@ -40,3 +40,17 @@ pretrained EDM checkpoint, and read `datasets/cifar10-32x32-test.zip` (built wit
 This repository is a derivative of NVlabs/edm, copyright (c) 2022 NVIDIA CORPORATION & AFFILIATES,
 and is distributed under the same license, Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International (`LICENSE.txt`).
+
+## Citation
+
+```bibtex
+@misc{brosse_dalalyan_2026,
+  title         = {Universal Local Error and Realized Amplification for the First-Order {EDM} Predictor},
+  author        = {Brosse, Nicolas and Dalalyan, Arnak S.},
+  year          = {2026},
+  eprint        = {2610.10190},
+  archivePrefix = {arXiv},
+  primaryClass  = {stat.ML},
+  url           = {https://arxiv.org/abs/2610.10190}
+}
+```

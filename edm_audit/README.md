@@ -3,7 +3,7 @@
 Code and frozen results for the numerical experiments of
 
 > Nicolas Brosse, Arnak S. Dalalyan. *Universal Local Error and Realized Amplification for the
-> First-Order EDM Predictor.*
+> First-Order EDM Predictor.* [arXiv:2610.10190](https://arxiv.org/abs/2610.10190), 2026.
 
 The numerical appendix of the paper is the reference for what is computed and why. The code
 builds on the NVlabs EDM code at the root of this repository and is distributed under its license,
